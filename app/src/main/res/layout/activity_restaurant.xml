@@ -31,85 +31,113 @@
             app:menu="@menu/bottom_menu" />
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/img_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hamburger"/>
+
     <ImageButton
         android:id="@+id/imgbtn_restaurant"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/backarrow"
-        android:backgroundTint="@color/white"
+        android:src="@drawable/arrow_sm_left"
+        android:backgroundTint="#82B1FF"
         tools:layout_editor_absoluteX="20dp"
         tools:layout_editor_absoluteY="30dp"
         tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/img_restaurant"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/hamburger"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btn_restaurant"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:text="찜"
-        tools:layout_editor_absoluteX="350dp"
-        tools:layout_editor_absoluteY="30dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:layout_editor_absoluteY="200dp">
+        tools:layout_editor_absoluteY="250dp">
 
-        <TextView
-            android:id="@+id/rname_restaurant"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:gravity="bottom|center"
-            android:text="맘스터치 인천대점"
-            android:textSize="25dp"
-            android:textStyle="bold" />
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rname_restaurant"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="맘스터치 인천대점"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgbtn_wish_restaurant"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#ffffff"
+                    android:src="@drawable/heart_outline" />
+
+            </LinearLayout>
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/kind_restaurant"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
             android:text="버거"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+            android:textSize="18dp" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
                 android:gravity="center"
-                android:textSize="20dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
                 android:text="정보" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
                 android:gravity="center"
                 android:layout_marginLeft="25dp"
-                android:textSize="20dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
                 android:text="메뉴" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
                 android:gravity="center"
                 android:layout_marginLeft="25dp"
-                android:textSize="20dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
                 android:text="리뷰" />
 
         </LinearLayout>
@@ -121,11 +149,11 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="23dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_home" />
+                android:src="@drawable/phone" />
             <TextView
                 android:id="@+id/rphone_restaurant"
                 android:layout_width="match_parent"
@@ -133,7 +161,7 @@
                 android:gravity="center_vertical"
                 android:layout_marginLeft="15dp"
                 android:text="032-xxx-xxxx"
-                android:textSize="17sp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
         <LinearLayout
@@ -142,11 +170,11 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="23dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_home" />
+                android:src="@drawable/pin_location" />
             <TextView
                 android:id="@+id/address_restaurant"
                 android:layout_width="match_parent"
@@ -154,7 +182,7 @@
                 android:gravity="center_vertical"
                 android:layout_marginLeft="15dp"
                 android:text="인천광역시 연수구 아카데미로 119"
-                android:textSize="17sp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
         <LinearLayout
@@ -167,9 +195,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="23dp"
                 android:text="영업 시간"
-                android:textSize="17sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/time_restaurant"
@@ -178,7 +206,7 @@
                 android:gravity="center"
                 android:layout_marginLeft="20dp"
                 android:text="10:00 ~ 22:00"
-                android:textSize="17sp" />
+                android:textSize="16sp" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -189,9 +217,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="23dp"
                     android:text="매주 일요일 휴무"
-                    android:textSize="17sp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -209,15 +237,6 @@
             tools:listitem="@layout/item_img_restaurant" />
 
     </LinearLayout>
-
-
-    <View
-        android:layout_width="370dp"
-        android:layout_height="4px"
-        android:background="#747474"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="200dp"
-        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

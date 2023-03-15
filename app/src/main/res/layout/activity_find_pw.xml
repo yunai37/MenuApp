@@ -89,6 +89,7 @@
         android:layout_marginTop="10dp"
         android:text="비밀번호 재설정"
         android:textStyle="bold"
+        android:backgroundTint="#82B1FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

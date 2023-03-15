@@ -5,31 +5,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF4C0"
+    android:background="#82B1FF"
     tools:context=".GateActivity">
 
 
     <ImageView
         android:id="@+id/img_gate_2"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/dinner"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="200dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:padding="2dp"
-        android:background="@drawable/image_border"/>
+        android:src="@drawable/fork_knife_2_5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="255dp" />
 
     <TextView
         android:id="@+id/txt_gate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="340dp"
-        android:background="#66000000"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="370dp"
         android:text=" 음식 고르기 힘들 때는? "
         android:textColor="#ffffff"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,14 +37,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
-        android:layout_marginTop="376dp"
-        android:background="#66000000"
+        android:layout_marginTop="406dp"
         android:text=" 점메추 "
         android:textColor="#ffffff"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_gate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:backgroundTint="#82B1FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintVertical_bias="0.94">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_gate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:backgroundTint="#82B1FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintVertical_bias="0.94">
+
+    </Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

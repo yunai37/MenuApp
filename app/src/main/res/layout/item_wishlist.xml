@@ -12,10 +12,12 @@
 
         <ImageView
             android:id="@+id/img_wishlist"
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:padding="2dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:background="@drawable/img_list_border"
             android:src="@drawable/hamburger" />
 
         <LinearLayout
@@ -43,12 +45,13 @@
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/btn_item_wishlist"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="7dp"
-                    android:text="찜" />
+                <ImageButton
+                    android:id="@+id/imgbtn_list"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#ffffff"
+                    android:src="@drawable/heart_filled" />
 
 
             </LinearLayout>

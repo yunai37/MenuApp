@@ -12,11 +12,13 @@
 
         <ImageView
             android:id="@+id/img_list"
-            android:layout_width="110dp"
+            android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="3dp"
-            android:padding="2dp"
-            android:src="@drawable/hamburger" />
+            android:padding="5dp"
+            android:background="@drawable/img_list_border"
+            android:scaleType="fitCenter"
+            android:src="@drawable/burger_logo" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,13 +45,13 @@
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/btn_item_list"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="7dp"
-                    android:text="찜" />
-
+                <ImageButton
+                    android:id="@+id/imgbtn_list"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#ffffff"
+                    android:src="@drawable/heart_outline" />
 
             </LinearLayout>
 
@@ -57,36 +59,58 @@
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:orientation="horizontal"
-                android:gravity="center"
                 tools:ignore="MissingConstraints">
 
                 <TextView
                     android:id="@+id/kind_list"
-                    android:layout_width="wrap_content"
+                    android:layout_width="120dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:gravity="start"
                     android:layout_marginLeft="10dp"
                     android:text="버거"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/star_list"
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="평점" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
 
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/star_filled_ffe60a" />
 
-                <TextView
-                    android:id="@+id/distance_list"
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="7dp"
-                    android:gravity="center"
-                    android:text="70m" />
+                    <TextView
+                        android:id="@+id/star_list"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center_vertical"
+                        android:text="4.5" />
 
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/pin_location_71e119" />
+                    <TextView
+                        android:id="@+id/distance_list"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="70m" />
+                </LinearLayout>
             </LinearLayout>
 
             <TextView
