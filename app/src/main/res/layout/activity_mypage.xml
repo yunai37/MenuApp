@@ -18,6 +18,12 @@
             android:layout_weight="1"
             android:id="@+id/container">
 
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:background="#82B1FF" />
+
         </FrameLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -26,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             app:labelVisibilityMode="labeled"
-            app:itemBackground="@color/purple_200"
+            app:itemBackground="@color/white"
             app:menu="@menu/bottom_menu" />
     </LinearLayout>
 
@@ -35,10 +41,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="30dp"
         android:text="마이페이지"
         android:textSize="25dp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,14 +54,15 @@
         android:layout_height="80dp"
         android:orientation="horizontal"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="130dp">
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="110dp">
 
         <ImageView
             android:id="@+id/img_mypage"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/횃불이"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/inu"
             android:background="@drawable/image_border"
             android:padding="2dp"
             tools:ignore="MissingConstraints" />
@@ -72,6 +80,7 @@
                 android:layout_height="35dp"
                 android:layout_marginTop="10dp"
                 android:text="닉네임"
+                android:textColor="@color/black"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -85,119 +94,153 @@
         </LinearLayout>
     </LinearLayout>
 
-    <View
-        android:layout_width="370dp"
-        android:layout_height="4px"
-        android:background="#747474"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="224dp"
-        tools:ignore="MissingConstraints" />
-
     <LinearLayout
-        android:layout_width="279dp"
-        android:layout_height="102dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="240dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.46">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#EAEAEA" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
             tools:ignore="MissingConstraints">
+
 
             <ImageView
                 android:id="@+id/img_mypage2"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/blackheart" />
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/Heart" />
 
             <TextView
                 android:id="@+id/txt_btn_mypage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="가고 싶은 음식점"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textColor="#363636"
+                android:textSize="17sp" />
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="#EAEAEA" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
             tools:ignore="MissingConstraints">
 
             <ImageView
                 android:id="@+id/img_mypage3"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/list" />
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/Rows" />
 
             <TextView
                 android:id="@+id/txt_btn_mypage2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="나의 맛집리스트"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textColor="#363636"
+                android:textSize="17sp" />
 
         </LinearLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="279dp"
-        android:layout_height="102dp"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="360dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="#EAEAEA"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
             tools:ignore="MissingConstraints">
 
             <ImageView
                 android:id="@+id/img_mypage4"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/setting" />
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/Settings_alt" />
 
             <TextView
                 android:id="@+id/txt_btn_mypage3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="내 정보 수정"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textColor="#363636"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#EAEAEA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img_mypage5"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/Logout" />
+
+            <TextView
+                android:id="@+id/txt_btn_mypage4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="로그아웃"
+                android:textColor="#363636"
+                android:textSize="17sp"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <View
-        android:layout_width="370dp"
-        android:layout_height="4px"
-        android:background="#747474"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="349dp"
-        tools:ignore="MissingConstraints" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

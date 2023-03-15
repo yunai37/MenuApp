@@ -45,8 +45,20 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:src="@drawable/arrow_sm_left"
-        android:backgroundTint="#82B1FF"
+        android:backgroundTint="@color/material_on_background_disabled"
         tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_restaurant2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/Share_box"
+        android:backgroundTint="@color/material_on_background_disabled"
+        tools:layout_editor_absoluteX="350dp"
         tools:layout_editor_absoluteY="30dp"
         tools:ignore="MissingConstraints" />
 
