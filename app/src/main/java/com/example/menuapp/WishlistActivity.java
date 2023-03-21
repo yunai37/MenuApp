@@ -1,4 +1,9 @@
 package com.example.menuapp;
 
-public class WishlistActivity {
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class WishlistActivity extends AppCompatActivity {
+    Button back,
 }

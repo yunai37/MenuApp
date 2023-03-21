@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="52dp"
-        android:text="제목 뭐라고 하지"
+        android:text="알레르기 및 선호 음식 선택"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
