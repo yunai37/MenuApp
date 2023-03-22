@@ -36,7 +36,7 @@
         android:layout_height="45dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/backarrow"
+        android:src="@drawable/arrow_left_large"
         android:backgroundTint="@color/white"
         tools:layout_editor_absoluteX="20dp"
         tools:layout_editor_absoluteY="30dp"
@@ -190,7 +190,7 @@
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/kind_setting"
+                android:id="@+id/like_setting"
                 android:layout_width="175dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

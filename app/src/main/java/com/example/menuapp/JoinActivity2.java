@@ -10,8 +10,9 @@ import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class JoinActivity2 extends AppCompatActivity {
-    Spinner year, gender;
+    Spinner year, gender;               // 스피너
     Button next;
+    String yearS, genderS;              // 선택된 값 담을 문자형 변수
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class JoinActivity2 extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //선택 시 db로 가도록 구현
+                yearS = year.getSelectedItem().toString();
             }
         });
 
@@ -41,6 +43,7 @@ public class JoinActivity2 extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //선택 시 db로 가도록 구현
+                genderS = gender.getSelectedItem().toString();
             }
         });
 
