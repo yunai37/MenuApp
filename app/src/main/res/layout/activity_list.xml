@@ -67,7 +67,7 @@
     </LinearLayout>
 
     <ListView
-        android:id="@+id/listv_wishlist"
+        android:id="@+id/listv_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="90dp"

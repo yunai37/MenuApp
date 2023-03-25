@@ -62,7 +62,7 @@
                 tools:ignore="MissingConstraints">
 
                 <TextView
-                    android:id="@+id/kind_list"
+                    android:id="@+id/category_list"
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:gravity="start"
