@@ -27,50 +27,59 @@
             android:layout_gravity="bottom"
             app:labelVisibilityMode="labeled"
             app:itemBackground="@color/white"
+            app:itemIconTint="@drawable/menu_item_color"
+            app:itemTextColor="@drawable/menu_item_color"
             app:menu="@menu/bottom_menu" />
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/imgbtn_setting"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/arrow_left_large"
-        android:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="30dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/txt_setting"
-        android:layout_width="150dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_marginLeft="3dp"
-        android:text="내 정보 수정"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="33dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_setting"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_left_large"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/txt_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="내 정보 수정"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
 
     <View
         android:layout_width="370dp"
         android:layout_height="4px"
         android:background="#747474"
         tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="90dp"
+        tools:layout_editor_absoluteY="100dp"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="100dp">
+        tools:layout_editor_absoluteY="110dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -87,6 +96,7 @@
                 android:layout_marginLeft="3dp"
                 android:text="닉네임"
                 android:textSize="20dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"/>
 
             <EditText
@@ -117,6 +127,7 @@
                 android:layout_marginLeft="3dp"
                 android:text="이메일"
                 android:textSize="20dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"/>
 
             <TextView
@@ -131,17 +142,6 @@
                 android:textColor="#4c4c4c" />
 
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="150dp"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="230dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -155,8 +155,50 @@
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="3dp"
+                android:text="한 줄 소개"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/introduce_setting"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="인천대 푸파 입니다."
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#4c4c4c" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="270dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/txt_setting5"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="3dp"
                 android:text="알레르기"
                 android:textSize="20dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"/>
 
             <TextView
@@ -180,13 +222,14 @@
             tools:ignore="MissingConstraints">
 
             <TextView
-                android:id="@+id/txt_setting5"
+                android:id="@+id/txt_setting56"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="3dp"
                 android:text="선호 음식"
                 android:textSize="20dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"/>
 
             <TextView
@@ -207,28 +250,32 @@
     <Button
         android:id="@+id/btn_setting"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="알레르기 정보 수정"
+        android:textColor="#584B00"
         android:textStyle="bold"
+        android:backgroundTint="#FFFF8F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6">
+        app:layout_constraintVertical_bias="0.63">
 
     </Button>
 
     <Button
         android:id="@+id/btn_setting2"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="저장하기"
+        android:textColor="#584B00"
         android:textStyle="bold"
+        android:backgroundTint="#FFFF8F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68">
+        app:layout_constraintVertical_bias="0.71">
 
     </Button>
 
